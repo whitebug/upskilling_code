@@ -1,0 +1,4 @@
+name: Hello Dart
+mode: dart
+files:
+  - name: main.dart
