@@ -1,0 +1,5 @@
+name: Longest Common Prefix
+mode: dart
+files:
+  - name: main.dart
+  - name: test.dart
