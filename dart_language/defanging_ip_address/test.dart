@@ -18,7 +18,7 @@ void _test(Map testMap, TestFunction f) {
   for (final entry in testMap.entries) {
     final result = _expect(entry.key, entry.value, f(entry.key));
     if (result != null) {
-      _result(false, [result]);
+      _result(false, result);
       return;
     }
   }
@@ -26,10 +26,10 @@ void _test(Map testMap, TestFunction f) {
   _result(true);
 }
 
-String? _expect(given, expected, actual) {
+List<String>? _expect(given, expected, actual) {
   if (actual == expected) {
     return null;
   } else {
-    return 'Test failed. Given: $given, expected: $expected, actual: $actual';
+    return ['Test failed.', '', 'Given: $given', 'Expected: $expected', 'Actual: $actual'];
   }
 }
