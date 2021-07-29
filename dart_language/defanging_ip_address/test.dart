@@ -9,16 +9,19 @@ void main() {
     '0.0.0.0': '0[.]0[.]0[.]0',
   };
   testMap.forEach((given, expected) {
-    expect(given, expected, defangIpAddress(given));
+    final success = expect(given, expected, defangIpAddress(given));
+    if (!success) return;
   });
 }
 
-void expect(given, expected, actual) {
+bool expect(given, expected, actual) {
   if (actual == expected) {
     _result(true);
+    return true;
   } else {
     _result(false, [
       'Test failed. Given: $given, expected: $expected, actual: $actual',
     ]);
+    return false;
   }
 }
