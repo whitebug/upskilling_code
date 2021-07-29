@@ -1,6 +1,8 @@
 void main() {
   expect(123, 321, reverseInteger(123));
   expect(-123, -321, reverseInteger(-123));
+  expect(120, 21, reverseInteger(120));
+  expect(0, 0, reverseInteger(0));
   expect(679834, 438976, reverseInteger(679834));
   expect(-353546, -645353, reverseInteger(-353546));
   expect(904864950090954, 459090059468409, reverseInteger(904864950090954));
