@@ -1,0 +1,5 @@
+name: Reverse integer
+mode: dart
+files:
+  - name: main.dart
+  - name: test.dart

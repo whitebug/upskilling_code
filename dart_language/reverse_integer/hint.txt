@@ -1,0 +1,1 @@
+Probably you are looking into [List.reversed](https://api.dart.dev/stable/2.13.4/dart-core/List/reversed.html).
