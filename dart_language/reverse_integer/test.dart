@@ -1,5 +1,4 @@
 import 'package:test/test.dart';
-import 'main.dart';
 
 void main() {
   test('Reverse integer', () {
