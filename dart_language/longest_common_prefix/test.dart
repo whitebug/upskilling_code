@@ -1,7 +1,7 @@
 typedef TestFunction = String? Function(List<String>);
 
 void main() {
-  final testMap = {
+  final Map<List<String>, String?> testMap = {
     ['flower', 'flow', 'flight', 'flutter']: 'fl',
     []: null,
     ['foo']: null,
