@@ -1,3 +1,3 @@
-int defangIpAddress(String address) {
+String defangIpAddress(String address) {
   // place a solution here
 }
