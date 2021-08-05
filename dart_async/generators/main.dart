@@ -6,7 +6,7 @@ class DataSource extends Iterable<int> {
   Iterator<int> get iterator => ;
 }
 
-List<String> mapping(var input) {
+List<String> mapping(DataSource input) {
   final List<String> result = [];
   final changedData = ;
   changedData.forEach((element) {
