@@ -1,0 +1,4 @@
+name: Unit tests
+mode: dart
+files:
+  - name: main.dart
